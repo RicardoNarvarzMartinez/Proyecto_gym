@@ -1,3 +1,4 @@
+@extends('plantillas.plantilla_estudiante')
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -78,6 +79,7 @@
 	</head>
 	<body>
 	<button type="button" class="btn btn-primary"><a href="/">Salir</button></a>
+
 	<br>
 	<h1><center>SUSCRIPTOR BIENVENIDO</center></h1>
 		<div id="header">

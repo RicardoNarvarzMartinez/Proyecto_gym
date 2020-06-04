@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/autocomplete', 'AutocompleteController@index');
+Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
+Route::post('/autocomplete/check', 'AutocompleteController@check')->name('autocomplete.check');
+
+Route::post('/register/check', 'AutocompleteController@check')->name('register.check');
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,14 +24,6 @@ Route::get('/', function () {
 
 Route::get('/Registro', function () {
     return view('Registro');
-});
-
-Route::get('/login', function () {
-    return view('login2');
-});
-
-Route::get('/Cobrador', function () {
-    return view('Cobrador');
 });
 
 Route::get('/Lista', function () {
@@ -56,9 +53,6 @@ Route::get('/correo', function () {
     return view('Correo');
 });
 
-Route::get('/Suscriptor', function () {
-    return view('Suscriptor');
-});
 Route::get('/Estatus', function () {
     return view('Estatus');
 });
@@ -67,11 +61,12 @@ Route::get('/pago', function () {
     return view('pago');
 });
 
-Route::get('/Servicio', function () {
-    return view('Servicio');
-});
-
-
 
 Route::resource('/Servicio', 'ServicioController');
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
+Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');

@@ -26,7 +26,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>Carlos hidalgo</td>
+        
         <td>Natacion</td>
         <td>6am-10pm</td>
         <td
@@ -34,7 +34,7 @@
         </td>
       </tr>
       <tr>
-        <td>Ruby America</td>
+       
         <td>Aerobics</td>
         <td>12pm-2pm</td>
         <td
@@ -42,7 +42,7 @@
         </td>
       </tr>
       <tr>
-        <td>Oscar vazquez</td>
+        
         <td>Gimnasio</td>
         <td>4pm-6pm</td>
         <td
@@ -50,7 +50,6 @@
         </td>
       </tr>
       <tr>
-        <td>Eddy ruiz</td>
         <td>Sala de masaje</td>
         <td>9am-6pm</td>
         <td
@@ -58,7 +57,7 @@
         </td>
       </tr>
       <tr>
-        <td>Esmeraldo perez</td>
+        
         <td>Zumba</td>
         <td>6pm-8pm</td>
         <td

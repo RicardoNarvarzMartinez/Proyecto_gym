@@ -67,7 +67,8 @@
         <div class="flex-center position-ref full-height">
 
                 <div class="top-right links">
-                        <a href="/login">Login</a>
+                
+                <a href="{{ route('login') }}">Login</a>
 
 
                             <a href="/Registro">Suscribirse</a>

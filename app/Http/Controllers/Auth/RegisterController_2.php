@@ -12,7 +12,7 @@ use DB;
 
 class RegisterController extends Controller
 {
-    /*
+  /*
     |--------------------------------------------------------------------------
     | Register Controller
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
- 
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -107,3 +107,5 @@ class RegisterController extends Controller
      }
     }
 }
+
+

@@ -106,6 +106,7 @@
 <div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
+                    <h3>Bienvenido</h3>
                         <p> Si quieres desarrollar tu máximo potencial, debes ser consciente de que no hay atajos; si quieres tener éxito tienes que esforzarte, perseverar y luchar.</p>
                     </div>
                     <div class="col-md-9 register-right">

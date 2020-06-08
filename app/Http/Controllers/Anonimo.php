@@ -11,6 +11,6 @@ class Anonimo extends Controller
     public function index()
     {
     $datos['servicios']=servicio::paginate(5);
-    return view('Lista',$datos);
+    return view('ListaAnonimo',$datos);
     }
 }

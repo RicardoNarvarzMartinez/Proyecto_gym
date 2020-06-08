@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>COBRANSAS PEDRITOS</title>
+        <title>Proyecto Final</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -64,16 +64,26 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+    <br>
+    
+        <div class="top-left links"> 
 
+            <a href="/home">Acerca de nosotros</a>
+
+            <a href="/home">Servicios Disponibles</a>
+
+        </div>  
+
+ 
+           
                 <div class="top-right links">
                 
                 <a href="{{ route('login') }}">Login</a>
 
 
-                            <a href="/Registro">Suscribirse</a>
+                <a href="/Register">Suscribirse</a>
                   
-                </div>
+                  </div>
             
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Servicios</title>
@@ -89,51 +99,14 @@
 
 <body>
 <div class="content">
+<br>
+<br>
+<br>
                 <div class="title m-b-md">
                    GYM PADRITOS "VIVE FUERTE"
-                </div>
+                </div>     
 
-<body bgcolor="#FFFFFF">
-<h1 align="center" class="style1">Servicios dispobibles</h1>
-<table border="4" align="center" cellpadding="4" cellspacing="4">
-    <thead>
-      <tr>
-        <th scope="col">Servicios</th>
-        <th scope="col">Costo Mensual</th>
-        <th scope="col">Horarios</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Gimnasio</td>
-        <td>400</td>
-        <td>6am-10pm</td>
-      </tr>
-      <tr>
-        <td>Aerobics</td>
-        <td>200</td>
-        <td>12pm-2pm</td>
-      </tr>
-      <tr>
-        <td>NataciÃ³n</td>
-        <td>550</td>
-        <td>4pm-6pm</td>
-      </tr>
-      <tr>
-        <td>Sala de masaje</td>
-        <td>1000</td>
-        <td>9am-6pm</td>
-      </tr>
-      <tr>
-        <td>Zumba</td>
-        <td>200</td>
-        <td>6pm-8pm</td>
-      </tr>
-    </tbody>
-</table>
-
-
-            </div>
+                <h3>Bienvenido a nuestro sitio web Para ponerte bien mamado </h3>    
         </div>
     </body>
 </html>

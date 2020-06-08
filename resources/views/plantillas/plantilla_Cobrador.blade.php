@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+
     <script src="/js/popper.js"></script>
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -14,13 +14,13 @@
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link"   href="/evidencia">Evidencias</a>
+                  <a class="nav-link"   href="/servicio">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"   href="/rubrica">Rubricas</a>
+                  <a class="nav-link"   href="/ListaSuscriptores">Suscriptores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"   href="/curso">Curso</a>
+                  <a class="nav-link"   href="/correo">Correo</a>
                 </li>
               </ul>
 
@@ -31,8 +31,7 @@
                       {{ Auth::user()->name }} <span class="caret"></span>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"   href="/seleccionar">Seleccionar Curso</a>
-                    <a class="dropdown-item" href="{{ route('logout') }}"
+                         <a class="dropdown-item" href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
                           {{ __('Logout') }}

@@ -18,7 +18,11 @@ Route::get('/', function () {
 
 
 
-//lista de suscriptores FAI
+//lista de suscriptores FAIL
+
+Route::get('/ListaSuscriptores', function () {
+    return view('ListaSuscrip');
+});
 
 Route::get('/Suscrito1', function () {
     return view('Suscritos/Carlos');
@@ -63,8 +67,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Cobrador
 Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
-Route::get('/ListaSuscriptores', 'CobradoresController@listar')->middleware('auth');
-
 
 //suscriptor
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
@@ -86,3 +88,11 @@ Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autoco
 Route::post('/autocomplete/check', 'AutocompleteController@check')->name('autocomplete.check');
 
 Route::post('/register/check', 'AutocompleteController@check')->name('register.check');
+
+
+Route::get('/RegistroGym', 'usuario@index')->name('RegistroGym');
+Route::post('/Guardar', 'usuario@check')->name('Guardar');
+Route::get('/LoginGym', 'usuario@LoginGym')->name('LoginGym');
+Route::post('/logingym', 'usuario@iniciar')->name('logingym');
+Route::get('/VistaUsuarioGym', 'usuarioLogiado@VistaUsuarioGym')->name('VistaUsuarioGym');
+Route::get('/logout', 'usuarioLogiado@logout')->name('logout');

@@ -78,10 +78,10 @@
            
                 <div class="top-right links">
                 
-                <a href="{{ route('login') }}">Login</a>
+                <a href="/LoginGym">Login</a>
 
 
-                <a href="/register">Suscribirse</a>
+                <a href="/RegistroGym">Suscribirse</a>
                   
                   </div>
             
@@ -96,17 +96,16 @@
 </style>
 
 </head>
-
-<body>
-<div class="content">
-<br>
-<br>
-<br>
-                <div class="title m-b-md">
-                   GYM PADRITOS "VIVE FUERTE"
+<div class="title m-b-md">
+                  <center> GYM PADRITOS "VIVE FUERTE"</center>
                 </div>     
 
-                <h3>Bienvenido a nuestro sitio web Para ponerte bien mamado </h3>    
+                <center> <h3>Bienvenido a nuestro sitio web Para ponerte bien mamado </h3>    </center>
         </div>
+<body>
+<div > @yield('content')
+<br>
+<br>
+<br>
     </body>
 </html>

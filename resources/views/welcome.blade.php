@@ -81,7 +81,7 @@
                 <a href="{{ route('login') }}">Login</a>
 
 
-                <a href="/Register">Suscribirse</a>
+                <a href="/RegistroGym">Suscribirse</a>
                   
                   </div>
             

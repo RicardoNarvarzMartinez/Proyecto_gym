@@ -82,4 +82,9 @@ class SuscriptoresController extends Controller
     {
         //
     }
+
+    public function Guardar(Request $request)
+    {
+        return  view('home');
+    }
 }

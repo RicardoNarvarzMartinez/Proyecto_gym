@@ -70,7 +70,7 @@
 
             <a href="/">Acerca de nosotros</a>
 
-            <a href="/home">Servicios Disponibles</a>
+            <a href="/Lista">Servicios Disponibles</a>
 
         </div>  
 

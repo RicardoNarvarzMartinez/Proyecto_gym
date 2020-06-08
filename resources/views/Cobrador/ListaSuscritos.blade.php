@@ -17,6 +17,7 @@ lista de Suscriptores
     @foreach($User as $user)
     
         <tr>
+        
             <td>{{$loop->iteration}}</td>
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>

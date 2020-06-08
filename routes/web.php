@@ -71,5 +71,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
 
-Route::get('/RegistroGym', function () {return view('RegistroGym');});
-Route::post('Guardar', 'HomeController@Guardar')->name('Guardar');
+Route::get('/RegistroGym','usuario@index')->name('RegistroGym');
+Route::post('/Guardar', 'AutocompleteController@check')->name('Guardar');

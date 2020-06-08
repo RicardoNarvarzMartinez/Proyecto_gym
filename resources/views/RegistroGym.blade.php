@@ -107,26 +107,24 @@
                         <p>La resistencia con la que te enfrentas en el gimnasio y la resistencia con la que te encuentras en la vida solo pueden construir un carácter fuerte.-Arnold Schwarzenegger.</p>
                     </div>
                     <div class="col-md-9 register-right">
-                    <form action="{{ route('Guardar') }}" method="POST">
-                        <div class="tab-content" id="myTabContent" >
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form method="POST" action="{{ route('Guardar') }}">
+                    @csrf
+                        <div class="tab-content"  >
+                            <div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">GYM</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="" />
+                                            <input type="text" class="form-control" placeholder="Nombre"name="name" value="{{ old('name') }}" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Apellido" name="apellido" value="" />
+                                            <input type="text" class="form-control" placeholder="Correo" name="email" value="{{ old('email') }}" required autocomplete="email" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Correo" name="correo" value="" />
+                                            <input type="password" class="form-control" placeholder="Contraseña" name="password" required autocomplete="new-password" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Contraseña" name="contra" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control"  placeholder="Confirmar contraseña" name="contraverificar" value="" />
+                                            <input type="password" class="form-control"  placeholder="Confirmar contraseña" name="password_confirmation" required autocomplete="new-password" />
                                         </div>
                                         <div class="form-group">
                                         <input type="submit" class="btnRegister"  value="Register"/>
@@ -134,4 +132,5 @@
                                     </div>
                                 </div>
                             </div>
-                     </form>
+                        </div>
+                  </form>

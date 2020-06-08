@@ -1,7 +1,6 @@
 lista de servicios
 
 <br>
-<button type="button" ><a href="{{url('Servicio/create')}}">Agregar Servicio</a>
 
 <table class="table table-light">
     <thead class="thead-light">
@@ -27,25 +26,12 @@ lista de servicios
             <td>{{$servicio->precio}}</td>
             <td>{{$servicio->horario}}</td>
             <td>{{$servicio->instructor}}</td>
-            <td>
-            <a href="{{ url('/Servicio/'.$servicio->id.'/edit') }}">
-            Editar 
-            </a>
-
-            | 
-
-
-
-            <form method="post" action="{{ url('/Servicio/'.$servicio->id) }}">
-                {{csrf_field()}}
-                {{method_field('DELETE') }}
-                <button type="submit" onclick="return confirm('¿borrar?');">Borrar</button>
-
-            </form>
-            </td>
+            <td> 
+         
+          </td>
         </tr>
         @endforeach
-        <button type="button" class="btn btn-primary"><a href="/Cobrador">Regresar</button></a>
+        <button type="button" class="btn btn-primary"><a href="/">Regresar</button></a>
 
     </tbody>
     <tfoot>

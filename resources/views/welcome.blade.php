@@ -68,7 +68,7 @@
     
         <div class="top-left links"> 
 
-            <a href="/">Acerca de nosotros</a>
+            <a href="/Nosotros">Acerca de nosotros</a>
 
             <a href="/Lista">Servicios Disponibles</a>
 
@@ -78,10 +78,10 @@
            
                 <div class="top-right links">
                 
-                <a href="/LoginGym">Login</a>
+                <a href="{{ route('login') }}">Login</a>
 
 
-                <a href="/RegistroGym">Suscribirse</a>
+                <a href="/register">Suscribirse</a>
                   
                   </div>
             
@@ -98,17 +98,15 @@
 </head>
 
 <body>
-<div class="title m-b-md">
-<center>  GYM PADRITOS "VIVE FUERTE"</center>   
+<div class="content">
+<br>
+<br>
+<br>
+                <div class="title m-b-md">
+                   GYM PADRITOS "VIVE FUERTE"
                 </div>     
 
-                <h3><center>Bienvenido a nuestro sitio web Para ponerte bien mamado</center>    </h3>    
+                <h3>Bienvenido a nuestro sitio web Para ponerte bien mamado </h3>    
         </div>
-<div>
-            @yield('content')
-</div>
-<br>
-<br>
-<br>
     </body>
 </html>

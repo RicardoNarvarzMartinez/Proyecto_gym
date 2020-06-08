@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Suscriptores;
 use Illuminate\Http\Request;
+use App\Servicio;
+use Illuminate\Support\Facades\Storage;
+
 
 class SuscriptoresController extends Controller
 {
@@ -14,7 +17,11 @@ class SuscriptoresController extends Controller
      */
     public function index()
     {
-        return view('Suscriptor');
+        if(auth()->user()->rol == 'Suscriptor')
+        { 
+            return view('Suscriptor');
+
+        }else{return view('404');}
     }
 
     /**
@@ -44,9 +51,10 @@ class SuscriptoresController extends Controller
      * @param  \App\Suscriptores  $suscriptores
      * @return \Illuminate\Http\Response
      */
-    public function show(Suscriptores $suscriptores)
+    public function show()
     {
-        //
+        $datos['servicios']=servicio::paginate(5);
+        return view('Suscriptor/Lista',$datos);
     }
 
     /**

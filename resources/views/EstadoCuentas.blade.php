@@ -117,7 +117,13 @@
                                 <h3 class="register-heading">Estado de cuentas</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
-                                        
+                                       @foreach($Servicio as $Servi)
+                                        <tr>
+                                          <td>{{$Servi->id}}</td>
+                                          <td>{{ $Servi->nombre}}</td>
+                                         <td>{{$Servi->status }}</td>
+                                        </tr>
+                                        @endforeach
 
                                     </div>
                                 </div>

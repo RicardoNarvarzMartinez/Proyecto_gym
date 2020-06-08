@@ -7,11 +7,11 @@ use DB;
 
 
 class VerificarCorreoController extends Controller
+{
 function index()
     {
      return view('autocomplete');
     }
-{
     protected function create(array $data)
     {
         return User::create([

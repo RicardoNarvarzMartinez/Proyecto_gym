@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Servicio;
+
 class usuarioLogiado extends Controller
 {
     public function __construct()
@@ -22,9 +24,11 @@ class usuarioLogiado extends Controller
   }
   public function EstadoCuentas()
   {
-      return view('EstadoCuentas');
+       $Servicio = Servicio::all();
+    $Servicio = Servicio::all();
+      return view('EstadoCuentas',compact('Servicio'));
   }
-  public function Historial()
+   public function Historial()
   {
       return view('Historial');
   }

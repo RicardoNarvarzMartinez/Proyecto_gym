@@ -20,7 +20,7 @@ class CreateServiciosTable extends Migration
             $table->String('horario');
             $table->String('instructor');
             $table->String('foto');
-            
+            $table->boolean('status');
             $table->timestamps();
         });
     }

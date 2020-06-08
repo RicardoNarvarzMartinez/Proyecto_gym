@@ -24,4 +24,8 @@ class usuarioLogiado extends Controller
   {
       return view('EstadoCuentas');
   }
+  public function Historial()
+  {
+      return view('Historial');
+  }
 }

@@ -68,7 +68,7 @@
     
         <div class="top-left links"> 
 
-        <a href="/home">Historial de pago</a>
+        <a href="/Historial">Historial de pago</a>
 
 <a href="/EstadoCuentas">  Estado de cuenta</a>
 

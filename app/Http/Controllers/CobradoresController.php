@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Cobradores;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\User;
 
 class CobradoresController extends Controller
 {
@@ -26,9 +27,12 @@ class CobradoresController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function listar()
     {
-        //
+        
+
+        $datos['User']=user::paginate(5);
+        return view('Cobrador/ListaSuscritos',$datos);
     }
 
     /**

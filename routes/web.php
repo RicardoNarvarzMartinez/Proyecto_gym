@@ -18,11 +18,7 @@ Route::get('/', function () {
 
 
 
-//lista de suscriptores FAIL
-
-Route::get('/ListaSuscriptores', function () {
-    return view('ListaSuscrip');
-});
+//lista de suscriptores FAI
 
 Route::get('/Suscrito1', function () {
     return view('Suscritos/Carlos');
@@ -67,6 +63,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Cobrador
 Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
+Route::get('/ListaSuscriptores', 'CobradoresController@listar')->middleware('auth');
+
 
 //suscriptor
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');

@@ -72,4 +72,8 @@ Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
 
 Route::get('/RegistroGym','usuario@index')->name('RegistroGym');
-Route::post('/Guardar', 'AutocompleteController@check')->name('Guardar');
+Route::post('/Guardar', 'usuario@check')->name('Guardar');
+Route::get('/LoginGym','usuario@LoginGym')->name('LoginGym');
+Route::post('/logingym', 'usuario@iniciar')->name('logingym');
+Route::get('/VistaUsuarioGym','usuarioLogiado@VistaUsuarioGym')->name('VistaUsuarioGym');
+Route::get('/logout','usuarioLogiado@logout')->name('logout');

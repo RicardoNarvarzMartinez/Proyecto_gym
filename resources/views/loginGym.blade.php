@@ -106,33 +106,29 @@
 <div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
-                        <h3>Bienvenido</h3>
-                        <p>La resistencia con la que te enfrentas en el gimnasio y la resistencia con la que te encuentras en la vida solo pueden construir un carácter fuerte.-Arnold Schwarzenegger.</p>
+                        <p> Si quieres desarrollar tu máximo potencial, debes ser consciente de que no hay atajos; si quieres tener éxito tienes que esforzarte, perseverar y luchar.</p>
                     </div>
                     <div class="col-md-9 register-right">
-                    <form method="POST" action="{{ route('Guardar') }}">
+                    <form method="POST" action="{{ route('logingym') }}">
                     @csrf
                         <div class="tab-content"  >
                             <div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">GYM</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Nombre"name="name" value="{{ old('name') }}" />
-                                        </div>
-                                        <div class="form-group">
+                                        <div >
                                             <input type="text" class="form-control" placeholder="Correo" name="email" value="{{ old('email') }}" required autocomplete="email" />
                                         </div>
-                                        <div class="form-group">
+                                        <br>
+                                        <div >
                                             <input type="password" class="form-control" placeholder="Contraseña" name="password" required autocomplete="new-password" />
                                         </div>
                                         <div class="form-group">
-                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                        <input type="submit" class="btnRegister"  value="Login"/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                   </form>
-
-                  @endsection
+@endsection

@@ -68,9 +68,9 @@
     
         <div class="top-left links"> 
 
-            <a href="/home">Acerca de nosotros</a>
+        <a href="/home">Historial de pago</a>
 
-            <a href="/home">Servicios Disponibles</a>
+<a href="/home">  Estado de cuenta</a>
 
         </div>  
 
@@ -78,11 +78,7 @@
            
                 <div class="top-right links">
                 
-                <a href="/LoginGym">Login</a>
-
-
-                <a href="/RegistroGym">Suscribirse</a>
-                  
+                <a href="/logout">cerrar sesion</a>
                   </div>
             
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />

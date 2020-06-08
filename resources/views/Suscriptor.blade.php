@@ -88,7 +88,7 @@
 			  </li>
 			<li><a href="/pago">Pagos</a>
 			  </li>
-			<li><a href="/Servicio">Servicios</a>
+			<li><a href="/inscripcion">Servicios</a>
               </li>
 			</ul>
 		</div>

@@ -70,11 +70,11 @@ Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
 
 //suscriptor
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
+Route::get('/inscripcion', 'SuscriptoresController@show')->middleware('auth');
+
 
 //anonimo
-Route::get('/Listar', function () {
-    return view('Lista'); 
-});
+Route::get('/Lista', 'Anonimo@index');
 
 
 //Servicios

@@ -68,7 +68,7 @@
     
         <div class="top-left links"> 
 
-            <a href="/home">Acerca de nosotros</a>
+            <a href="/Nosotros">Acerca de nosotros</a>
 
             <a href="/Lista">Servicios Disponibles</a>
 

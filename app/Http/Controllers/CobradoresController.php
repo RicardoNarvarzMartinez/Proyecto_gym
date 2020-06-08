@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cobradores;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CobradoresController extends Controller
 {
@@ -14,9 +15,12 @@ class CobradoresController extends Controller
      */
     public function index()
     {
-        return view('Cobrador');
-    }
+        if(auth()->user()->rol == 'Cobrador')
+        { 
+            return view('Cobrador');
 
+        }else{return view('404');}
+    }
     /**
      * Show the form for creating a new resource.
      *

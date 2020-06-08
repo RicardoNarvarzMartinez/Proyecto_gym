@@ -12,24 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/autocomplete', 'AutocompleteController@index');
-Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
-Route::post('/autocomplete/check', 'AutocompleteController@check')->name('autocomplete.check');
-
-Route::post('/register/check', 'AutocompleteController@check')->name('register.check');
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Registro', function () {
-    return view('Registro');
-});
 
-Route::get('/Lista', function () {
-    return view('Lista');
 
-});
+//lista de suscriptores FAIL
 
 Route::get('/ListaSuscriptores', function () {
     return view('ListaSuscrip');
@@ -49,24 +38,47 @@ Route::get('/Suscrito3', function () {
 
 });
 
+Route::get('/Registro', function () {
+    return view('Registro');
+});
+
+Route::get('/Lista', function () {
+    return view('Lista');
+
+});
+
+
 Route::get('/correo', function () {
-    return view('Correo');
+    return view('Correo'); //correo FAIL
 });
 
 Route::get('/Estatus', function () {
-    return view('Estatus');
+    return view('Estatus'); //estatus FAIL
 });
 
-Route::get('/pago', function () { 
+Route::get('/pago', function () { //pago FAIL
     return view('pago');
 });
 
 
-Route::resource('/Servicio', 'ServicioController');
-
-Auth::routes();
-
+//autenticacion Laravel
+Auth::routes();  
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Cobrador
 Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
+
+//suscriptor
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
+
+//Servicios
+Route::resource('/Servicio', 'ServicioController');
+
+
+//verifacion uso de ajax.
+
+Route::get('/autocomplete', 'AutocompleteController@index');
+Route::post('/autocomplete/fetch', 'AutocompleteController@fetch')->name('autocomplete.fetch');
+Route::post('/autocomplete/check', 'AutocompleteController@check')->name('autocomplete.check');
+
+Route::post('/register/check', 'AutocompleteController@check')->name('register.check');

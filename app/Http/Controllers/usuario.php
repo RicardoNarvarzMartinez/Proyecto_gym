@@ -10,8 +10,4 @@ class usuario extends Controller
     {
         return view('RegistroGym');
     }
-    public function Guardar(Request $request)
-    {
-        return view("RegistroGym");
-    }
 }

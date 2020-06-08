@@ -30,7 +30,6 @@ class AutocompleteController extends Controller
         }
       }
     }
-    }
 
     function fetch(Request $request)
     {

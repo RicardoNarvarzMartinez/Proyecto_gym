@@ -96,3 +96,5 @@ Route::get('/LoginGym', 'usuario@LoginGym')->name('LoginGym');
 Route::post('/logingym', 'usuario@iniciar')->name('logingym');
 Route::get('/VistaUsuarioGym', 'usuarioLogiado@VistaUsuarioGym')->name('VistaUsuarioGym');
 Route::get('/logout', 'usuarioLogiado@logout')->name('logout');
+Route::get('/EstadoCuentas', 'usuarioLogiado@EstadoCuentas')->name('EstadoCuentas');
+

@@ -20,4 +20,8 @@ class usuarioLogiado extends Controller
     Auth::logout();
     return redirect('/');
   }
+  public function EstadoCuentas()
+  {
+      return view('EstadoCuentas');
+  }
 }

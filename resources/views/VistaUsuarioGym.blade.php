@@ -70,7 +70,7 @@
 
         <a href="/home">Historial de pago</a>
 
-<a href="/home">  Estado de cuenta</a>
+<a href="/EstadoCuentas">  Estado de cuenta</a>
 
         </div>  
 

@@ -70,7 +70,7 @@
 
             <a href="/home">Acerca de nosotros</a>
 
-            <a href="/home">Servicios Disponibles</a>
+            <a href="/Lista">Servicios Disponibles</a>
 
         </div>  
 
@@ -81,7 +81,7 @@
                 <a href="{{ route('login') }}">Login</a>
 
 
-                <a href="/Register">Suscribirse</a>
+                <a href="/register">Suscribirse</a>
                   
                   </div>
             

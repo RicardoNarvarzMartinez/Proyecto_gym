@@ -71,8 +71,14 @@ Route::get('/Cobrador', 'CobradoresController@index')->middleware('auth');
 //suscriptor
 Route::get('/Suscriptor', 'SuscriptoresController@index')->middleware('auth');
 
+//anonimo
+Route::get('/Listar', function () {
+    return view('Lista'); 
+});
+
+
 //Servicios
-Route::resource('/Servicio', 'ServicioController');
+Route::resource('/Servicio', 'ServicioController')->middleware('auth');
 
 
 //verifacion uso de ajax.

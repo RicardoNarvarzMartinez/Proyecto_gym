@@ -30,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    //protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -105,5 +105,11 @@ class RegisterController extends Controller
       $output .= '</ul>';
       echo $output;
      }
+    }
+
+    public function redirectPath()
+    {
+       
+            return '/Suscriptor';
     }
 }

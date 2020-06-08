@@ -1,5 +1,5 @@
 lista de servicios
-@extends('plantillas.plantilla_estudiante')
+
 <br>
 <button type="button" ><a href="{{url('Servicio/create')}}">Agregar Servicio</a>
 

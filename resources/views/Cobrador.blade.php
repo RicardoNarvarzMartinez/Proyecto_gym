@@ -3,6 +3,7 @@
 
 
 @section('title', 'Cobrador')
+
 @section('content')
 
 <h1>Menu Cobrador</h1>

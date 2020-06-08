@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCobradoresTable extends Migration
+class UsuarioServicios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateCobradoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('cobradores', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('usuario_servicio', function (Blueprint $table) {
+            $table->increments('id');
+            $table->String('id_user');
+            $table->String('id_servicio');
         });
     }
 
@@ -26,6 +27,6 @@ class CreateCobradoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cobradores');
+        //
     }
 }
